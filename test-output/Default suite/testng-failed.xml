@@ -5,7 +5,8 @@
     <classes>
       <class name="defaultproject.Tests.BasicTest">
         <methods>
-          <include name="loginErrorValidation"/>
+          <include name="loginErrorValidation" invocation-numbers="0"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- defaultproject.Tests.BasicTest -->
     </classes>

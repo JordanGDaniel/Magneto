@@ -34,13 +34,10 @@ public class Listeners extends BaseTest implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
 		extentTest.get().fail(result.getThrowable()); //getTrowable gets the error output
-		
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
 		String filePath = null;
@@ -48,7 +45,6 @@ public class Listeners extends BaseTest implements ITestListener{
 		try {
 			filePath = getScreenShot(result.getMethod().getMethodName(), driver);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());

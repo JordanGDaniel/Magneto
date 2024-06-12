@@ -4,9 +4,14 @@
 	<listeners>
 		<listener class-name="defaultproject.TestComponents.Listeners"></listener>
 	</listeners>
-  <test name="ErrorValidation">
+  <test name="BasicTest">
     <classes>
-      <class name="defaultproject.Tests.ErrorValidations"/>
+      <class name="defaultproject.Tests.BasicTest"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Error">
+    <classes>
+      <class name="defaultproject.Tests.ErrorValidation"/>
+    </classes>
+  </test>
 </suite> <!-- Suite -->

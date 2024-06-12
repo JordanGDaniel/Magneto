@@ -65,7 +65,7 @@
 	
 	<profiles>
 		<profile>
-			<id>ErrorValidation</id>
+			<id>BasicTest</id>
 			<build>
 				<pluginManagement><!-- lock down plugins versions to avoid using
 					Maven
