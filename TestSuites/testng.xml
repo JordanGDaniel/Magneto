@@ -11,7 +11,7 @@
   </test> <!-- Test -->
   <test name="Error">
     <classes>
-      <class name="defaultproject.Tests.ErrorValidation"/>
+      <class name="defaultproject.Tests.ErrorValidations"/>
     </classes>
   </test>
 </suite> <!-- Suite -->

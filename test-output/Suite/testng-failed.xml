@@ -4,14 +4,14 @@
   <listeners>
     <listener class-name="defaultproject.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="ErrorValidation(failed)">
+  <test thread-count="5" parallel="tests" name="Error(failed)">
     <classes>
       <class name="defaultproject.Tests.ErrorValidations">
         <methods>
-          <include name="loginErrorValidation" invocation-numbers="0 1"/>
+          <include name="loginErrorValidation" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- defaultproject.Tests.ErrorValidations -->
     </classes>
-  </test> <!-- ErrorValidation(failed) -->
+  </test> <!-- Error(failed) -->
 </suite> <!-- Failed suite [Suite] -->
