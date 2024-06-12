@@ -83,7 +83,8 @@ public class AbstractComponents {
 	@FindBy(css = "#ui-id-11")
 	WebElement womenJacketLink;
 	
-	public womenJacketPage goToWomenJacketPage() {
+	public womenJacketPage goToWomenJacketPage(String userName) {
+		waitForTextToAppear(welcomeBy, "Welcome, "+userName+"!");
 		Actions a = new Actions(driver);
 		a.moveToElement(womenButton).moveToElement(womenTopsLink).moveToElement(womenJacketLink).click().build()
 				.perform();

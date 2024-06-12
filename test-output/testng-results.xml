@@ -1,201 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="5" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-12T17:57:21 BST" name="Suite" finished-at="2024-06-12T17:58:13 BST" duration-ms="52288">
+  <suite started-at="2024-06-12T19:49:11 BST" name="Default suite" finished-at="2024-06-12T19:49:23 BST" duration-ms="12081">
     <groups>
-      <group name="Error Handling">
-        <method signature="BasicTest.loginErrorValidation(java.util.HashMap)[pri:0, instance:defaultproject.Tests.BasicTest@9816741]" name="loginErrorValidation" class="defaultproject.Tests.BasicTest"/>
-        <method signature="ErrorValidations.loginErrorValidation(java.util.HashMap)[pri:0, instance:defaultproject.Tests.ErrorValidations@c667f46]" name="loginErrorValidation" class="defaultproject.Tests.ErrorValidations"/>
-      </group> <!-- Error Handling -->
+      <group name="Regression">
+        <method signature="TestScenario1.threeItemsToBuy(java.util.HashMap)[pri:0, instance:defaultproject.Tests.TestScenario1@5fe94a96]" name="threeItemsToBuy" class="defaultproject.Tests.TestScenario1"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-06-12T17:57:21 BST" name="Error" finished-at="2024-06-12T17:57:52 BST" duration-ms="31556">
-      <class name="defaultproject.Tests.ErrorValidations">
-        <test-method retried="true" signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:defaultproject.Tests.ErrorValidations@c667f46]" started-at="2024-06-12T17:57:21 BST" name="loginErrorValidation" data-provider="getData" finished-at="2024-06-12T17:57:34 BST" duration-ms="13557" status="SKIP">
+    <test started-at="2024-06-12T19:49:11 BST" name="Default test" finished-at="2024-06-12T19:49:23 BST" duration-ms="12081">
+      <class name="defaultproject.Tests.TestScenario1">
+        <test-method signature="threeItemsToBuy(java.util.HashMap)[pri:0, instance:defaultproject.Tests.TestScenario1@5fe94a96]" started-at="2024-06-12T19:49:11 BST" name="threeItemsToBuy" data-provider="getData" finished-at="2024-06-12T19:49:23 BST" duration-ms="11862" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{pwd=WM*k6cye4eY#K4U, email=jordangdaniel@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".message-error.error.message"}
-  (Session info: chrome=125.0.6422.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [864c8ab0d1ee8f8a9590832db9125201, findElement {value=.message-error.error.message, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\jorda\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65050}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65050/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 864c8ab0d1ee8f8a9590832db9125201]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".message-error.error.message"}
-  (Session info: chrome=125.0.6422.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [864c8ab0d1ee8f8a9590832db9125201, findElement {value=.message-error.error.message, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\jorda\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65050}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65050/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 864c8ab0d1ee8f8a9590832db9125201
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at defaultproject.Tests.ErrorValidations.loginErrorValidation(ErrorValidations.java:25)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:defaultproject.Tests.ErrorValidations@c667f46]" started-at="2024-06-12T17:57:34 BST" name="tearDown" finished-at="2024-06-12T17:57:35 BST" duration-ms="206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:defaultproject.Tests.ErrorValidations@c667f46]" started-at="2024-06-12T17:57:35 BST" name="loginErrorValidation" data-provider="getData" finished-at="2024-06-12T17:57:46 BST" duration-ms="11261" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{pwd=WM*k6cye4eY#K4U, email=jordangdaniel@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".message-error.error.message"}
-  (Session info: chrome=125.0.6422.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1607ad322341e19ddfa3531a208ed0dd, findElement {value=.message-error.error.message, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\jorda\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65115}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65115/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1607ad322341e19ddfa3531a208ed0dd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".message-error.error.message"}
-  (Session info: chrome=125.0.6422.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1607ad322341e19ddfa3531a208ed0dd, findElement {value=.message-error.error.message, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\jorda\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65115}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65115/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1607ad322341e19ddfa3531a208ed0dd
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at defaultproject.Tests.ErrorValidations.loginErrorValidation(ErrorValidations.java:25)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:defaultproject.Tests.ErrorValidations@c667f46]" started-at="2024-06-12T17:57:46 BST" name="tearDown" finished-at="2024-06-12T17:57:46 BST" duration-ms="169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:defaultproject.Tests.ErrorValidations@c667f46]" started-at="2024-06-12T17:57:46 BST" name="loginErrorValidation" data-provider="getData" finished-at="2024-06-12T17:57:52 BST" duration-ms="5641" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{pwd=WM*k6cye4eY#K4U, email=jordangdaniel2@gmail.com}]]>
+                <![CDATA[{pwd=WM*k6cye4eY#K4U, userName=Jordan Daniel, email=jordangdaniel@gmail.com, jacketName=Olivia 1/4 Zip Light Jacket}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:defaultproject.Tests.ErrorValidations@c667f46]" started-at="2024-06-12T17:57:52 BST" name="tearDown" finished-at="2024-06-12T17:57:52 BST" duration-ms="159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- defaultproject.Tests.ErrorValidations -->
-    </test> <!-- Error -->
-    <test started-at="2024-06-12T17:57:21 BST" name="BasicTest" finished-at="2024-06-12T17:58:13 BST" duration-ms="52288">
-      <class name="defaultproject.Tests.BasicTest">
-        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:defaultproject.Tests.BasicTest@9816741]" started-at="2024-06-12T17:57:21 BST" name="loginErrorValidation" data-provider="getData" finished-at="2024-06-12T17:58:13 BST" duration-ms="51895" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{pwd=WM*k6cye4eY#K4U, userName=Jordan Daniel, email=jordangdaniel@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:defaultproject.Tests.BasicTest@9816741]" started-at="2024-06-12T17:58:13 BST" name="tearDown" finished-at="2024-06-12T17:58:13 BST" duration-ms="202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- defaultproject.Tests.BasicTest -->
-    </test> <!-- BasicTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- threeItemsToBuy -->
+      </class> <!-- defaultproject.Tests.TestScenario1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

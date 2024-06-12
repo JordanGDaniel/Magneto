@@ -52,7 +52,7 @@ public class BasicTest extends BaseTest {
 		whatsNewPage wNPage = mWLPage.goToWhatsNewPage();
 		womenPage wPage = wNPage.goToWomenPage();
 		womenTopsPage wTPage = wPage.goToWomenTopsPage();
-		womenJacketPage wJPage = wTPage.goToWomenJacketPage();
+		womenJacketPage wJPage = wTPage.goToWomenJacketPage(input.get("userName"));
 		womenHoodiePage wHPage = wJPage.goToWomenHoodiePage();
 		womenTeesPage wTeePage = wHPage.goToWomenTeesPage();
 		womenBrasPage wBraPage = wTeePage.goToWomenBrasPage();
