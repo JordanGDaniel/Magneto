@@ -31,8 +31,7 @@ public class womenJacketPage extends AbstractComponents{
 	
 	public oliviaPage getProductByName(String jacketName) {
 		WebElement oliviaJacket = getJacketNames().stream()
-				.filter(product -> product.findElement(By.xpath("//a[@class='product-item-link']")).getText().equals(jacketName)).findFirst()
-				.orElse(null);
+				.filter(product -> product.getText().equals(jacketName)).findFirst().orElse(null);
 		oliviaJacket.click();
 		oliviaPage oPage = new oliviaPage(driver);
 		return oPage;

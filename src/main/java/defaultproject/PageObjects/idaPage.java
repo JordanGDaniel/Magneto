@@ -8,16 +8,16 @@ import org.openqa.selenium.support.PageFactory;
 
 import defaultproject.AbstractComponents.AbstractComponents;
 
-public class oliviaPage extends AbstractComponents{
+public class idaPage extends AbstractComponents{
 	
 	WebDriver driver;
-	public oliviaPage(WebDriver driver) {
+	public idaPage(WebDriver driver) {
 		super(driver);
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	By size28 = By.id("option-label-size-143-item-166");
+	By size28 = By.id("option-label-size-143-item-171");
 	
 	By colourBlue = By.id("option-label-color-93-item-50");
 	
@@ -25,7 +25,7 @@ public class oliviaPage extends AbstractComponents{
 	
 	By title = By.cssSelector(".base");
 	
-	public String selectColourAndSize() {
+	public String idaSelectColourAndSize() {
 		waitForElementToAppear(colourBlue);
 		driver.findElement(size28).click();
 		driver.findElement(colourBlue).click();

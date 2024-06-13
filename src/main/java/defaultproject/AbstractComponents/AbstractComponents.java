@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import defaultproject.PageObjects.bagsPage;
+import defaultproject.PageObjects.checkoutPage;
 import defaultproject.PageObjects.customerLoginPage;
 import defaultproject.PageObjects.fitnessEquipmentPage;
 import defaultproject.PageObjects.gearPage;
@@ -50,6 +51,10 @@ public class AbstractComponents {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	By addToCart = By.id("product-addtocart-button");
+	
+	By title = By.cssSelector(".base");
 
 	@FindBy(css = "#ui-id-3")
 	WebElement whatsNewButton;
@@ -339,6 +344,19 @@ public class AbstractComponents {
 	}
 	
 
+	@FindBy(css = "#top-cart-btn-checkout")
+	WebElement checkoutButton;
+	
+	@FindBy(css = ".action.showcart")
+	WebElement cartButton;
+	
+	public checkoutPage goToCheckoutPage() {
+		cartButton.click();
+		checkoutButton.click();
+		checkoutPage cOPage = new checkoutPage(driver);
+		return cOPage;
+	}
+	
 	@FindBy(css = "div[class='panel header'] button[type='button']")
 	WebElement welcomeButton;
 
@@ -371,6 +389,11 @@ public class AbstractComponents {
 	public void waitForTextToAppear(By ele, String text) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(ele, text));
+	}
+	
+	public void waitForTwoWindows(int windowCount) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.numberOfWindowsToBe(windowCount));
 	}
 
 	public customerLoginPage goToCustomerLoginPage() {

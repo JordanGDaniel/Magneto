@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import defaultproject.AbstractComponents.AbstractComponents;
 
-public class oliviaPage extends AbstractComponents{
+public class eosPage extends AbstractComponents{
 	
 	WebDriver driver;
-	public oliviaPage(WebDriver driver) {
+	public eosPage(WebDriver driver) {
 		super(driver);
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
@@ -25,7 +25,7 @@ public class oliviaPage extends AbstractComponents{
 	
 	By title = By.cssSelector(".base");
 	
-	public String selectColourAndSize() {
+	public String eosSelectColourAndSize() {
 		waitForElementToAppear(colourBlue);
 		driver.findElement(size28).click();
 		driver.findElement(colourBlue).click();

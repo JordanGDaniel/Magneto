@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-12T19:49:11 BST" name="Default suite" finished-at="2024-06-12T19:49:23 BST" duration-ms="12081">
+  <suite started-at="2024-06-13T20:30:46 BST" name="Default suite" finished-at="2024-06-13T20:31:27 BST" duration-ms="40612">
     <groups>
       <group name="Regression">
         <method signature="TestScenario1.threeItemsToBuy(java.util.HashMap)[pri:0, instance:defaultproject.Tests.TestScenario1@5fe94a96]" name="threeItemsToBuy" class="defaultproject.Tests.TestScenario1"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-06-12T19:49:11 BST" name="Default test" finished-at="2024-06-12T19:49:23 BST" duration-ms="12081">
+    <test started-at="2024-06-13T20:30:46 BST" name="Default test" finished-at="2024-06-13T20:31:27 BST" duration-ms="40612">
       <class name="defaultproject.Tests.TestScenario1">
-        <test-method signature="threeItemsToBuy(java.util.HashMap)[pri:0, instance:defaultproject.Tests.TestScenario1@5fe94a96]" started-at="2024-06-12T19:49:11 BST" name="threeItemsToBuy" data-provider="getData" finished-at="2024-06-12T19:49:23 BST" duration-ms="11862" status="PASS">
+        <test-method signature="threeItemsToBuy(java.util.HashMap)[pri:0, instance:defaultproject.Tests.TestScenario1@5fe94a96]" started-at="2024-06-13T20:30:46 BST" name="threeItemsToBuy" data-provider="getData" finished-at="2024-06-13T20:31:27 BST" duration-ms="40391" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{pwd=WM*k6cye4eY#K4U, userName=Jordan Daniel, email=jordangdaniel@gmail.com, jacketName=Olivia 1/4 Zip Light Jacket}]]>
+                <![CDATA[{lastName=Dickinson, country=United States, addr1=1600 Pennsylvania Avenue NW, city=Washington DC, postcode=20500, userName=Jordan Daniel, firstName=Emily, phoneNumber=+1 202-456-1111, hoodieName=Eos V-Neck Hoodie, state=Washington, pwd=WM*k6cye4eY#K4U, pantsName=Ida Workout Parachute Pant, email=jordangdaniel@gmail.com, jacketName=Olivia 1/4 Zip Light Jacket}]]>
               </value>
             </param>
           </params>

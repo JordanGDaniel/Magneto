@@ -6,7 +6,6 @@
       <class name="defaultproject.Tests.TestScenario1">
         <methods>
           <include name="threeItemsToBuy" invocation-numbers="0"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- defaultproject.Tests.TestScenario1 -->
     </classes>

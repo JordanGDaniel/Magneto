@@ -3,6 +3,16 @@
 	"email" : "jordangdaniel@gmail.com",
 	"pwd" : "WM*k6cye4eY#K4U",
 	"userName" : "Jordan Daniel",
-	"jacketName" : "Olivia 1/4 Zip Light Jacket"
+	"jacketName" : "Olivia 1/4 Zip Light Jacket",
+	"hoodieName" : "Eos V-Neck Hoodie",
+	"pantsName" : "Ida Workout Parachute Pant",
+	"firstName" : "Emily",
+	"lastName" : "Dickinson",
+	"addr1" : "1600 Pennsylvania Avenue NW",
+	"city" : "Washington DC",
+	"postcode" : "20500",
+	"country" : "United States",
+	"state" : "Washington",
+	"phoneNumber" : "+1 202-456-1111"
 }
 ]
