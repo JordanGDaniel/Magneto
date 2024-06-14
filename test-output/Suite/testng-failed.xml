@@ -4,14 +4,18 @@
   <listeners>
     <listener class-name="defaultproject.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Error(failed)">
+  <test thread-count="5" parallel="tests" name="Regression(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
     <classes>
-      <class name="defaultproject.Tests.ErrorValidations">
+      <class name="defaultproject.Tests.TestScenario1">
         <methods>
-          <include name="loginErrorValidation" invocation-numbers="0"/>
-          <include name="tearDown"/>
+          <include name="threeItemsToBuy" invocation-numbers="0"/>
         </methods>
-      </class> <!-- defaultproject.Tests.ErrorValidations -->
+      </class> <!-- defaultproject.Tests.TestScenario1 -->
     </classes>
-  </test> <!-- Error(failed) -->
+  </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [Suite] -->

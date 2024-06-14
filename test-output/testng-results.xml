@@ -2,15 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-13T20:30:46 BST" name="Default suite" finished-at="2024-06-13T20:31:27 BST" duration-ms="40612">
+  <suite started-at="2024-06-14T20:10:25 BST" name="Suite" finished-at="2024-06-14T20:11:05 BST" duration-ms="39983">
     <groups>
       <group name="Regression">
-        <method signature="TestScenario1.threeItemsToBuy(java.util.HashMap)[pri:0, instance:defaultproject.Tests.TestScenario1@5fe94a96]" name="threeItemsToBuy" class="defaultproject.Tests.TestScenario1"/>
+        <method signature="TestScenario1.threeItemsToBuy(java.util.HashMap)[pri:0, instance:defaultproject.Tests.TestScenario1@f58853c]" name="threeItemsToBuy" class="defaultproject.Tests.TestScenario1"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-06-13T20:30:46 BST" name="Default test" finished-at="2024-06-13T20:31:27 BST" duration-ms="40612">
+    <test started-at="2024-06-14T20:10:25 BST" name="BasicTest" finished-at="2024-06-14T20:10:25 BST" duration-ms="11">
+    </test> <!-- BasicTest -->
+    <test started-at="2024-06-14T20:10:25 BST" name="Error" finished-at="2024-06-14T20:10:25 BST" duration-ms="11">
+    </test> <!-- Error -->
+    <test started-at="2024-06-14T20:10:25 BST" name="Regression" finished-at="2024-06-14T20:11:05 BST" duration-ms="39983">
       <class name="defaultproject.Tests.TestScenario1">
-        <test-method signature="threeItemsToBuy(java.util.HashMap)[pri:0, instance:defaultproject.Tests.TestScenario1@5fe94a96]" started-at="2024-06-13T20:30:46 BST" name="threeItemsToBuy" data-provider="getData" finished-at="2024-06-13T20:31:27 BST" duration-ms="40391" status="PASS">
+        <test-method signature="threeItemsToBuy(java.util.HashMap)[pri:0, instance:defaultproject.Tests.TestScenario1@f58853c]" started-at="2024-06-14T20:10:26 BST" name="threeItemsToBuy" data-provider="getData" finished-at="2024-06-14T20:11:05 BST" duration-ms="39747" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,6 +26,6 @@
           </reporter-output>
         </test-method> <!-- threeItemsToBuy -->
       </class> <!-- defaultproject.Tests.TestScenario1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Regression -->
+  </suite> <!-- Suite -->
 </testng-results>

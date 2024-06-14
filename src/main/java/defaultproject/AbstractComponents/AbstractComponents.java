@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import defaultproject.PageObjects.bagsPage;
-import defaultproject.PageObjects.checkoutPage;
+import defaultproject.PageObjects.shippingPage;
 import defaultproject.PageObjects.customerLoginPage;
 import defaultproject.PageObjects.fitnessEquipmentPage;
 import defaultproject.PageObjects.gearPage;
@@ -350,10 +350,10 @@ public class AbstractComponents {
 	@FindBy(css = ".action.showcart")
 	WebElement cartButton;
 	
-	public checkoutPage goToCheckoutPage() {
+	public shippingPage goToCheckoutPage() {
 		cartButton.click();
 		checkoutButton.click();
-		checkoutPage cOPage = new checkoutPage(driver);
+		shippingPage cOPage = new shippingPage(driver);
 		return cOPage;
 	}
 	

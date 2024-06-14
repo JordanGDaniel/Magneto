@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests">
+	<groups>
+		<run>
+			<include name="Regression"></include>
+		</run>
+	</groups>
 	<listeners>
 		<listener class-name="defaultproject.TestComponents.Listeners"></listener>
 	</listeners>
-  <test name="BasicTest">
-    <classes>
-      <class name="defaultproject.Tests.BasicTest"/>
-    </classes>
-  </test> <!-- Test -->
-  <test name="Error">
-    <classes>
-      <class name="defaultproject.Tests.ErrorValidations"/>
-    </classes>
-  </test>
-</suite> <!-- Suite -->
+	<test name="Regression">
+		<classes>
+			<class name="defaultproject.Tests.TestScenario1" />
+		</classes>
+	</test>
+	<test name="BasicTest">
+		<classes>
+			<class name="defaultproject.Tests.BasicTest" />
+		</classes>
+	</test> <!--
+	Test -->
+	<test name="Error">
+		<classes>
+			<class name="defaultproject.Tests.ErrorValidations" />
+		</classes>
+	</test>
+</suite> <!--
+Suite -->
