@@ -427,4 +427,7 @@ public class AbstractComponents {
 		return lPage;
 	}
 
+	public void tearDown() { 
+		  driver.close(); }
+	 
 }

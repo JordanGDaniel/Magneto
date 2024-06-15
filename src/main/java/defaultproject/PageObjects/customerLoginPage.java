@@ -59,7 +59,10 @@ public class customerLoginPage extends AbstractComponents {
 	By basket = By.cssSelector(".action.showcart");
 
 	By okBy = By.xpath("//span[contains(text(),'OK')]");
-
+	
+	By cartCounter = By.cssSelector(".counter-label");
+	
+	
 	public void login(String email, String pwd) {
 
 		waitForElementToAppear(orderBy);
@@ -74,17 +77,17 @@ public class customerLoginPage extends AbstractComponents {
 	}
 
 	public void isBasketEmpty() throws InterruptedException {
-		int i = 1;
+		int i = 0;
 		int i2 = allCart.size();
 		if (i2 != 0) {
-			while (i <= allCart.size() + 1) {
-				Thread.sleep(Duration.ofSeconds(2));
+			while (i < i2) {
 				basketIcon.click();
 				deleteButton.click();
 				waitForElementToAppear(okBy);
 				okButton.click();
 				closeButton.click();
 				i++;
+				Thread.sleep(Duration.ofSeconds(2));
 			}
 		}
 	}

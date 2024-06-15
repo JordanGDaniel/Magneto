@@ -47,7 +47,7 @@ public class shippingPage extends AbstractComponents {
 	@FindBy(css = ".shipping-address-item.selected-item")
 	WebElement address;
 
-	public void enterShipping(String emailAddr, String frstName, String lstName, String addr1, String cityAddr,
+	public placeOrderPage enterShipping(String emailAddr, String frstName, String lstName, String addr1, String cityAddr,
 			String stateAddr, String postcodeAddr, String countryAddr, String phoneNumberAddr)
 			throws InterruptedException {
 
@@ -72,6 +72,9 @@ public class shippingPage extends AbstractComponents {
 
 		tableRateRadioButton.click();
 		nextButton.click();
+		
+		placeOrderPage pOPage = new placeOrderPage(driver);
+		return pOPage;
 
 	}
 

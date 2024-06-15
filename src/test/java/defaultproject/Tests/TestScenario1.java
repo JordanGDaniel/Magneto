@@ -42,10 +42,11 @@ public class TestScenario1 extends BaseTest{
 		String idaAddedText = iPage.idaSelectColourAndSize();
 		Assert.assertEquals(idaAddedText, "Added");
 		shippingPage cOPage = iPage.goToCheckoutPage();
-		cOPage.enterShipping(input.get("email"), input.get("firstName"), input.get("lastName"), input.get("addr1"), input.get("city"), 
+		placeOrderPage pOPage = cOPage.enterShipping(input.get("email"), input.get("firstName"), input.get("lastName"), input.get("addr1"), input.get("city"), 
 				input.get("state"), input.get("postcode"), input.get("country"), input.get("phoneNumber"));
-		placeOrderPage pOPage = new placeOrderPage(driver);
+		//placeOrderPage pOPage = new placeOrderPage(driver);
 		pOPage.placeOrder();
+		pOPage.tearDown();
 	}
 	
 
